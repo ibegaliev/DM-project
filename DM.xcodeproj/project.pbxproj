@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C23B64D2B39CD6400AB37E4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C23B64C2B39CD6400AB37E4 /* MainView.swift */; };
+		8C23B6502B39CF9C00AB37E4 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C23B64F2B39CF9C00AB37E4 /* MainCell.swift */; };
+		8C23B6522B39D07600AB37E4 /* ActionDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C23B6512B39D07600AB37E4 /* ActionDM.swift */; };
+		8C23B6542B39D12100AB37E4 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C23B6532B39D12100AB37E4 /* PersonController.swift */; };
+		8C23B6562B39D12E00AB37E4 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C23B6552B39D12E00AB37E4 /* PersonView.swift */; };
 		8C6D99B12B383AEF003F4C1E /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D99B02B383AEF003F4C1E /* MainController.swift */; };
 		8C6D99B32B383AFC003F4C1E /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D99B22B383AFC003F4C1E /* TabbarController.swift */; };
 		8CE6B48D2B38362C00FCB2D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE6B48C2B38362C00FCB2D5 /* AppDelegate.swift */; };
@@ -37,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C23B64C2B39CD6400AB37E4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8C23B64F2B39CF9C00AB37E4 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		8C23B6512B39D07600AB37E4 /* ActionDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionDM.swift; sourceTree = "<group>"; };
+		8C23B6532B39D12100AB37E4 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
+		8C23B6552B39D12E00AB37E4 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		8C6D99B02B383AEF003F4C1E /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		8C6D99B22B383AFC003F4C1E /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		8CE6B4892B38362C00FCB2D5 /* DM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DM.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +93,7 @@
 			children = (
 				8C6D99B22B383AFC003F4C1E /* TabbarController.swift */,
 				8C6D99B02B383AEF003F4C1E /* MainController.swift */,
+				8C23B6532B39D12100AB37E4 /* PersonController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -90,6 +101,9 @@
 		8C6D99AE2B383AD5003F4C1E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8C23B64C2B39CD6400AB37E4 /* MainView.swift */,
+				8C23B6552B39D12E00AB37E4 /* PersonView.swift */,
+				8C23B64F2B39CF9C00AB37E4 /* MainCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,6 +111,7 @@
 		8C6D99AF2B383ADF003F4C1E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8C23B6512B39D07600AB37E4 /* ActionDM.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -284,7 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C23B6522B39D07600AB37E4 /* ActionDM.swift in Sources */,
+				8C23B6542B39D12100AB37E4 /* PersonController.swift in Sources */,
 				8C6D99B12B383AEF003F4C1E /* MainController.swift in Sources */,
+				8C23B6502B39CF9C00AB37E4 /* MainCell.swift in Sources */,
+				8C23B64D2B39CD6400AB37E4 /* MainView.swift in Sources */,
+				8C23B6562B39D12E00AB37E4 /* PersonView.swift in Sources */,
 				8CE6B4972B38362C00FCB2D5 /* DM.xcdatamodeld in Sources */,
 				8CE6B48D2B38362C00FCB2D5 /* AppDelegate.swift in Sources */,
 				8C6D99B32B383AFC003F4C1E /* TabbarController.swift in Sources */,
