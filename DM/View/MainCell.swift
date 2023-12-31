@@ -9,6 +9,12 @@ import UIKit
 
 class MainCell: UITableViewCell {
     
+    private lazy var backView: UIView = {
+        let view = UIView()
+        
+        return view
+    }()
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
