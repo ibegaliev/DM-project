@@ -13,8 +13,9 @@ class MainView: UIView, UITableViewDelegate, UITableViewDataSource {
         let tv = UITableView()
         tv.delegate = self
         tv.dataSource = self
-        tv.backgroundColor = .cyan
+        tv.backgroundColor = .white
         tv.translatesAutoresizingMaskIntoConstraints = false
+        tv.separatorStyle = .none
         tv.register(MainCell.self, forCellReuseIdentifier: "MainCell")
         return tv
     }()
@@ -45,7 +46,7 @@ class MainView: UIView, UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        0
+        10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

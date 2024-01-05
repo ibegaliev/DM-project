@@ -19,11 +19,14 @@ class TabbarController: UITabBarController {
     
     private func setTabbar() {
         
-        mainController.title = "Home"
+        mainController.title = "daily"
         
         tabBarController?.tabBar.backgroundColor = .red
         
-        viewControllers = [mainController, personController]
+        viewControllers = [
+            UINavigationController(rootViewController: mainController),
+            personController
+        ]
         
     }
     

@@ -13,6 +13,8 @@ class MainController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title
         self.view = mainView
     }
     
