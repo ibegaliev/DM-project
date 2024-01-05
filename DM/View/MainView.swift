@@ -13,6 +13,8 @@ class MainView: UIView, UITableViewDelegate, UITableViewDataSource {
         let tv = UITableView()
         tv.delegate = self
         tv.dataSource = self
+        tv.backgroundColor = .cyan
+        tv.translatesAutoresizingMaskIntoConstraints = false
         tv.register(MainCell.self, forCellReuseIdentifier: "MainCell")
         return tv
     }()
@@ -24,7 +26,9 @@ class MainView: UIView, UITableViewDelegate, UITableViewDataSource {
     }
     
     required init?(coder: NSCoder) {
-        fatalError()
+        super.init(coder: coder)
+        setUI()
+        setConstraints()
     }
     
     private func setUI() {
@@ -41,7 +45,7 @@ class MainView: UIView, UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

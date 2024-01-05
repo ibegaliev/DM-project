@@ -12,7 +12,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scane = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: scane)
-        let tabbar = TabbarController()
+        let tabbar = UINavigationController(rootViewController: TabbarController())
         window.rootViewController = tabbar
         window.makeKeyAndVisible()
     }

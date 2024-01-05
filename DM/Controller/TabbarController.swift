@@ -10,6 +10,7 @@ import UIKit
 class TabbarController: UITabBarController {
     
     private lazy var mainController: UIViewController = MainController()
+    private lazy var personController: UIViewController = PersonController()
     
     override func viewDidLoad() {
          super.viewDidLoad()
@@ -22,7 +23,10 @@ class TabbarController: UITabBarController {
         
         mainController.title = "Home"
         
-        viewControllers = [mainController]
+        tabBarController?.tabBar.backgroundColor = .red
+        
+        viewControllers = [mainController, personController]
+        
     }
     
 }
