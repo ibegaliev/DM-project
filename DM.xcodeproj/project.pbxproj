@@ -93,7 +93,6 @@
 		8C6D99AD2B383AC8003F4C1E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8C6D99B22B383AFC003F4C1E /* TabbarController.swift */,
 				8C6D99B02B383AEF003F4C1E /* MainController.swift */,
 				8C23B6532B39D12100AB37E4 /* PersonController.swift */,
 			);
@@ -144,6 +143,7 @@
 			children = (
 				8CE6B48C2B38362C00FCB2D5 /* AppDelegate.swift */,
 				8CE6B48E2B38362C00FCB2D5 /* SceneDelegate.swift */,
+				8C6D99B22B383AFC003F4C1E /* TabbarController.swift */,
 				8C6D99AE2B383AD5003F4C1E /* View */,
 				8C6D99AF2B383ADF003F4C1E /* Model */,
 				8C6D99AD2B383AC8003F4C1E /* Controller */,

@@ -11,7 +11,7 @@ class PersonController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = .yellow
     }
     
 }
