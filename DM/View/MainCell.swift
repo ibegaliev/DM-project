@@ -7,6 +7,12 @@
 
 import UIKit
 
+class MainCellBottomItems: UIView {
+    
+    
+    
+}
+
 class MainCell: UITableViewCell {
     
     private lazy var mainStack: UIStackView = {
