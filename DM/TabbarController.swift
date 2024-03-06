@@ -11,19 +11,20 @@ class TabbarController: UITabBarController {
     
     private lazy var mainController: UIViewController = {
         let vc = MainController()
-        vc.title = "Xabarlar"
+        
         return vc
     }()
 
     private lazy var addReminderController: UIViewController = {
         let vc = UIViewController()
-        vc.title = "Xabar qo'shish"
+        
         return vc
     }()
 
     private lazy var personController: UIViewController = {
-        let vc = PersonController()
-        vc.title = "Ma'lumotlar"
+//        let vc = PersonController()
+        let vc = UIViewController()
+        
         return vc
     }()
 
@@ -34,13 +35,13 @@ class TabbarController: UITabBarController {
     
     private func setTabbar() {
         
-        addReminderController.title = "Xabar qo'shish"
-        personController.title = "Ma'lumotlar"
+//        addReminderController.title = "Xabar qo'shish"
+//        personController.title = "Ma'lumotlar"
                 
         viewControllers = [
             UINavigationController(rootViewController: mainController),
-            UINavigationController(rootViewController: mainController),
-            UINavigationController(rootViewController: personController),
+//            UINavigationController(rootViewController: addReminderController),
+            UINavigationController(rootViewController: personController)
         ]
         
     }

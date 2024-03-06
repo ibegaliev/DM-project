@@ -14,8 +14,8 @@ class MainView: UIView, UITableViewDelegate, UITableViewDataSource {
         tv.delegate = self
         tv.dataSource = self
         tv.backgroundColor = .white
-        tv.translatesAutoresizingMaskIntoConstraints = false
         tv.separatorStyle = .none
+        tv.translatesAutoresizingMaskIntoConstraints = false
         tv.register(MainCell.self, forCellReuseIdentifier: "MainCell")
         return tv
     }()
@@ -27,9 +27,7 @@ class MainView: UIView, UITableViewDelegate, UITableViewDataSource {
     }
     
     required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        setUI()
-        setConstraints()
+        fatalError()
     }
     
     private func setUI() {
