@@ -15,6 +15,8 @@ class MainView: UIView, UITableViewDelegate, UITableViewDataSource {
         tv.dataSource = self
         tv.backgroundColor = .white
         tv.separatorStyle = .none
+        tv.contentInset = UIEdgeInsets(top: 12, left: 0, bottom: 50, right: 0)
+        tv.showsVerticalScrollIndicator = false
         tv.translatesAutoresizingMaskIntoConstraints = false
         tv.register(MainCell.self, forCellReuseIdentifier: "MainCell")
         return tv
@@ -49,10 +51,9 @@ class MainView: UIView, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath) as! MainCell
-        
+        cell.selectionStyle = .none
         return cell
     }
-
     
 }
 
